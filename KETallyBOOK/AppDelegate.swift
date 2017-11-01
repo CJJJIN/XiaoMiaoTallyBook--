@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        LZImportFiles().verifyPassword()
+        setRootContoller()
+        setCategoryDB()
+        let keyboardManager = IQKeyboardManager.sharedManager()
+        keyboardManager.enable = true
+        keyboardManager.enableAutoToolbar = false
+        keyboardManager.keyboardDistanceFromTextField = 0
         return true
     }
 
@@ -31,6 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+         LZImportFiles().verifyPassword()
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -41,6 +50,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    private func setRootContoller(){
+        window = UIWindow.init(frame: kScreenBounds);
+        window?.backgroundColor = .white;
+        let tabBarControllerConfig = KECustomTabBarControllerConfig.init()
+        window?.rootViewController = tabBarControllerConfig.tabBarController
+        window?.makeKeyAndVisible()
+    }
+    
+    private func setCategoryDB(){
+        let userDefaults = UserDefaults.standard
+        let isFirstStart = userDefaults.object(forKey: "isFirstStart") as? Bool
+        if isFirstStart == nil{
+            userDefaults.set(true, forKey: "isFirstStart")
+            userDefaults.synchronize()
+            if let path = Bundle.main.path(forResource: "Category", ofType: "plist"){
+                let categoryArry = NSArray(contentsOfFile: path) as! Array<Any>
+                for dic in categoryArry {
+                    var billType = KEBillTypeModel()
+                    billType = KEBillTypeModel.bg_object(withKeyValues: (dic as! NSDictionary)) as! KEBillTypeModel
+                    billType.bg_save()
+                }
+                KEHomeBillModel().bg_save()
+            }
+        }
+    }
 }
 

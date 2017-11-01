@@ -7,21 +7,268 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B7F1ACCA0C39F2D49A1B2AD /* Pods_KETallyBOOK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E662CAE3AF0C2F70BB6533FE /* Pods_KETallyBOOK.framework */; };
+		520D9AF81F749DE6008B1F93 /* KEViewModelProtocolImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D9AF71F749DE6008B1F93 /* KEViewModelProtocolImpl.swift */; };
+		520D9AFC1F74AACD008B1F93 /* KEHomeDetailProtocolImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520D9AFB1F74AACD008B1F93 /* KEHomeDetailProtocolImpl.swift */; };
+		5211D2861F78A746005CA7CA /* KETallyHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5211D2851F78A746005CA7CA /* KETallyHeadView.swift */; };
+		52176B141F96E2B9004D9716 /* KEChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52176B131F96E2B9004D9716 /* KEChartView.m */; };
+		52176B1E1F96E633004D9716 /* HighLightFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52176B171F96E5FD004D9716 /* HighLightFormatter.m */; };
+		52176B1F1F96E633004D9716 /* XAxisFormtter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52176B191F96E5FD004D9716 /* XAxisFormtter.m */; };
+		52176B201F96E633004D9716 /* YAxisFormtter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52176B1B1F96E5FD004D9716 /* YAxisFormtter.m */; };
+		52176B211F96E633004D9716 /* YRightAxisFormtter.m in Sources */ = {isa = PBXBuildFile; fileRef = 52176B1D1F96E5FD004D9716 /* YRightAxisFormtter.m */; };
+		52176B261F971F85004D9716 /* KEChartTopTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52176B241F971F85004D9716 /* KEChartTopTableViewCell.swift */; };
+		52176B271F971F85004D9716 /* KEChartTopTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52176B251F971F85004D9716 /* KEChartTopTableViewCell.xib */; };
+		52176B2D1F9874E4004D9716 /* KESettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 52176B2C1F987272004D9716 /* KESettingController.m */; };
+		52176B2E1F987507004D9716 /* WRCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 52176B2A1F98724D004D9716 /* WRCellView.m */; };
+		52176B311F9881FC004D9716 /* KEFindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52176B2F1F9881FC004D9716 /* KEFindViewController.swift */; };
+		52176B321F9881FC004D9716 /* KEFindViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52176B301F9881FC004D9716 /* KEFindViewController.xib */; };
+		521D7EAE1F8B4A3E00B76293 /* KEHomeBillModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EAD1F8B4A3E00B76293 /* KEHomeBillModel.m */; };
+		521D7EB01F8B4FD600B76293 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 521D7EAF1F8B4FD600B76293 /* libsqlite3.tbd */; };
+		521D7EB11F8B516B00B76293 /* BGFMDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7E991F8B492500B76293 /* BGFMDB.m */; };
+		521D7EB21F8B516B00B76293 /* BGModelInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7E9C1F8B492500B76293 /* BGModelInfo.m */; };
+		521D7EB31F8B516B00B76293 /* BGTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7E9E1F8B492500B76293 /* BGTool.m */; };
+		521D7EB41F8B516B00B76293 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EA01F8B492500B76293 /* FMDatabase.m */; };
+		521D7EB51F8B516B00B76293 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EA21F8B492500B76293 /* FMDatabaseAdditions.m */; };
+		521D7EB61F8B516B00B76293 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EA41F8B492500B76293 /* FMDatabasePool.m */; };
+		521D7EB71F8B516B00B76293 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EA61F8B492500B76293 /* FMDatabaseQueue.m */; };
+		521D7EB81F8B516B00B76293 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EA91F8B492500B76293 /* FMResultSet.m */; };
+		521D7EB91F8B516B00B76293 /* NSObject+BGModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EAB1F8B492500B76293 /* NSObject+BGModel.m */; };
+		521D7EBC1F8B66E100B76293 /* KEBillTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EBB1F8B66E100B76293 /* KEBillTypeModel.m */; };
+		521D7EC11F8BB11400B76293 /* KEBillTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EC01F8BB11400B76293 /* KEBillTypeViewModel.swift */; };
+		521D7EC41F8DA08F00B76293 /* GATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 521D7EC21F8DA08E00B76293 /* GATextField.m */; };
+		523AA36C1F98D1FC0088D557 /* LZGestureSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA33D1F98D0F20088D557 /* LZGestureSetupViewController.m */; };
+		523AA36E1F98D4880088D557 /* LZGestureSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA33B1F98D0F20088D557 /* LZGestureSettingViewController.m */; };
+		523AA36F1F98D4930088D557 /* LZGestureIntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3391F98D0F20088D557 /* LZGestureIntroduceViewController.m */; };
+		523AA3701F98D49B0088D557 /* LZGestureTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3321F98D0F20088D557 /* LZGestureTool.m */; };
+		523AA3711F98D4A30088D557 /* LZBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA30E1F98D0F20088D557 /* LZBaseViewController.m */; };
+		523AA3721F98D6370088D557 /* LZPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3661F98D0F20088D557 /* LZPasswordViewController.m */; };
+		523AA3731F98D63F0088D557 /* TouchIdUnlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3191F98D0F20088D557 /* TouchIdUnlock.m */; };
+		523AA3741F98D6470088D557 /* LZNumberTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3621F98D0F20088D557 /* LZNumberTool.m */; };
+		523AA3751F98D6C30088D557 /* LZGestureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3341F98D0F20088D557 /* LZGestureViewController.m */; };
+		523AA3761F98D6D70088D557 /* LZNumberView.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3641F98D0F20088D557 /* LZNumberView.m */; };
+		523AA3771F98D70B0088D557 /* LZGestureScreen.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3301F98D0F20088D557 /* LZGestureScreen.m */; };
+		523AA3781F98D7120088D557 /* LZWarnLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3361F98D0F20088D557 /* LZWarnLabel.m */; };
+		523AA3791F98D71B0088D557 /* PCCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3201F98D0F20088D557 /* PCCircleView.m */; };
+		523AA37A1F98D7240088D557 /* PCCircleViewConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3221F98D0F20088D557 /* PCCircleViewConst.m */; };
+		523AA37B1F98D72C0088D557 /* LZItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3601F98D0F20088D557 /* LZItem.m */; };
+		523AA37C1F98D7470088D557 /* PCCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA31E1F98D0F20088D557 /* PCCircle.m */; };
+		523AA37F1F98D8B80088D557 /* LZImportFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA37E1F98D8B80088D557 /* LZImportFiles.m */; };
+		523AA38F1F98DD1B0088D557 /* LZTouchIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3131F98D0F20088D557 /* LZTouchIDViewController.m */; };
+		523AA3901F98DD230088D557 /* LZNumSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AA3681F98D0F20088D557 /* LZNumSettingViewController.m */; };
+		52805FC11F7CA2E8008A6217 /* KEChargeUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52805FC01F7CA2E8008A6217 /* KEChargeUpViewController.swift */; };
+		52805FC51F8A0154008A6217 /* Category.plist in Resources */ = {isa = PBXBuildFile; fileRef = 52805FC41F8A0154008A6217 /* Category.plist */; };
+		52805FC81F8A1755008A6217 /* KECategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52805FC61F8A1755008A6217 /* KECategoryCollectionViewCell.swift */; };
+		52805FC91F8A1755008A6217 /* KECategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52805FC71F8A1755008A6217 /* KECategoryCollectionViewCell.xib */; };
+		52805FD01F8B30BB008A6217 /* KEHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52805FCF1F8B3059008A6217 /* KEHomeDetailViewController.swift */; };
+		52C124BB1F90483E004D1D70 /* KEBillDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C124B91F90483E004D1D70 /* KEBillDetailTableViewCell.swift */; };
+		52C124BC1F90483E004D1D70 /* KEBillDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52C124BA1F90483E004D1D70 /* KEBillDetailTableViewCell.xib */; };
+		52C153A51F94A082009ED700 /* WKCustomeRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C153A41F94A082009ED700 /* WKCustomeRefreshHeader.swift */; };
+		52C153AB1F959B8A009ED700 /* KEChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C153AA1F959B8A009ED700 /* KEChartViewController.swift */; };
+		52C153AD1F959CFE009ED700 /* KEChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C153AC1F959CFE009ED700 /* KEChartViewModel.swift */; };
+		52C153B41F959F69009ED700 /* PNValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C153B31F959F68009ED700 /* PNValue.swift */; };
+		52C153BB1F95C460009ED700 /* KECustomTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C153BA1F95C460009ED700 /* KECustomTool.m */; };
 		52C7E8231F6F73D4008E7E86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7E8221F6F73D4008E7E86 /* AppDelegate.swift */; };
-		52C7E8251F6F73D4008E7E86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7E8241F6F73D4008E7E86 /* ViewController.swift */; };
-		52C7E8281F6F73D4008E7E86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C7E8261F6F73D4008E7E86 /* Main.storyboard */; };
 		52C7E82A1F6F73D4008E7E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52C7E8291F6F73D4008E7E86 /* Assets.xcassets */; };
 		52C7E82D1F6F73D4008E7E86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52C7E82B1F6F73D4008E7E86 /* LaunchScreen.storyboard */; };
+		52C7E8391F6FAAB4008E7E86 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7E8381F6FAAB4008E7E86 /* Global.swift */; };
+		52C7E83F1F6FB320008E7E86 /* KECustomTabBarControllerConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7E83E1F6FB320008E7E86 /* KECustomTabBarControllerConfig.swift */; };
+		52C7E8421F6FB3F2008E7E86 /* KECustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7E8411F6FB3F2008E7E86 /* KECustomTabBarController.swift */; };
+		52C7E8441F6FB800008E7E86 /* KECustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7E8431F6FB800008E7E86 /* KECustomTabBar.swift */; };
+		52C7E8461F70B6A7008E7E86 /* KECustomTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C7E8451F70B6A7008E7E86 /* KECustomTabBarButton.swift */; };
+		52D941A11F73B8310006F140 /* KEHomeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D941A01F73B8310006F140 /* KEHomeDetailViewModel.swift */; };
+		52DBE2FE1F7108680086221E /* KEViewModelServicesImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE2FD1F7108680086221E /* KEViewModelServicesImpl.swift */; };
+		52DBE3001F73590D0086221E /* KEConfigBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE2FF1F73590D0086221E /* KEConfigBaseNavigationController.swift */; };
+		52DBE3161F73701C0086221E /* KEBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE3151F73701C0086221E /* KEBaseViewController.swift */; };
+		52DBE3181F7371DC0086221E /* KEViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE3171F7371DC0086221E /* KEViewModel.swift */; };
+		52DBE31A1F73A4700086221E /* KEViewModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52DBE3191F73A4700086221E /* KEViewModelService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E11973E6F6477D77A0F19ED /* Pods-KETallyBOOK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KETallyBOOK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KETallyBOOK/Pods-KETallyBOOK.debug.xcconfig"; sourceTree = "<group>"; };
+		11FBD62B0E1106D7B4EB8795 /* Pods-KETallyBOOK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KETallyBOOK.release.xcconfig"; path = "Pods/Target Support Files/Pods-KETallyBOOK/Pods-KETallyBOOK.release.xcconfig"; sourceTree = "<group>"; };
+		520D9AF71F749DE6008B1F93 /* KEViewModelProtocolImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEViewModelProtocolImpl.swift; sourceTree = "<group>"; };
+		520D9AFB1F74AACD008B1F93 /* KEHomeDetailProtocolImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEHomeDetailProtocolImpl.swift; sourceTree = "<group>"; };
+		5211D2851F78A746005CA7CA /* KETallyHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KETallyHeadView.swift; sourceTree = "<group>"; };
+		52176B121F96E2B9004D9716 /* KEChartView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KEChartView.h; sourceTree = "<group>"; };
+		52176B131F96E2B9004D9716 /* KEChartView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KEChartView.m; sourceTree = "<group>"; };
+		52176B161F96E5FD004D9716 /* HighLightFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HighLightFormatter.h; sourceTree = "<group>"; };
+		52176B171F96E5FD004D9716 /* HighLightFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HighLightFormatter.m; sourceTree = "<group>"; };
+		52176B181F96E5FD004D9716 /* XAxisFormtter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAxisFormtter.h; sourceTree = "<group>"; };
+		52176B191F96E5FD004D9716 /* XAxisFormtter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAxisFormtter.m; sourceTree = "<group>"; };
+		52176B1A1F96E5FD004D9716 /* YAxisFormtter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAxisFormtter.h; sourceTree = "<group>"; };
+		52176B1B1F96E5FD004D9716 /* YAxisFormtter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAxisFormtter.m; sourceTree = "<group>"; };
+		52176B1C1F96E5FD004D9716 /* YRightAxisFormtter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YRightAxisFormtter.h; sourceTree = "<group>"; };
+		52176B1D1F96E5FD004D9716 /* YRightAxisFormtter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YRightAxisFormtter.m; sourceTree = "<group>"; };
+		52176B241F971F85004D9716 /* KEChartTopTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEChartTopTableViewCell.swift; sourceTree = "<group>"; };
+		52176B251F971F85004D9716 /* KEChartTopTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KEChartTopTableViewCell.xib; sourceTree = "<group>"; };
+		52176B291F98724D004D9716 /* WRCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WRCellView.h; sourceTree = "<group>"; };
+		52176B2A1F98724D004D9716 /* WRCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WRCellView.m; sourceTree = "<group>"; };
+		52176B2B1F987272004D9716 /* KESettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KESettingController.h; sourceTree = "<group>"; };
+		52176B2C1F987272004D9716 /* KESettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KESettingController.m; sourceTree = "<group>"; };
+		52176B2F1F9881FC004D9716 /* KEFindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEFindViewController.swift; sourceTree = "<group>"; };
+		52176B301F9881FC004D9716 /* KEFindViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KEFindViewController.xib; sourceTree = "<group>"; };
+		521D7E981F8B492500B76293 /* BGFMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGFMDB.h; sourceTree = "<group>"; };
+		521D7E991F8B492500B76293 /* BGFMDB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGFMDB.m; sourceTree = "<group>"; };
+		521D7E9A1F8B492500B76293 /* BGFMDBConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGFMDBConfig.h; sourceTree = "<group>"; };
+		521D7E9B1F8B492500B76293 /* BGModelInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGModelInfo.h; sourceTree = "<group>"; };
+		521D7E9C1F8B492500B76293 /* BGModelInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGModelInfo.m; sourceTree = "<group>"; };
+		521D7E9D1F8B492500B76293 /* BGTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGTool.h; sourceTree = "<group>"; };
+		521D7E9E1F8B492500B76293 /* BGTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BGTool.m; sourceTree = "<group>"; };
+		521D7E9F1F8B492500B76293 /* FMDatabase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		521D7EA01F8B492500B76293 /* FMDatabase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		521D7EA11F8B492500B76293 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		521D7EA21F8B492500B76293 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		521D7EA31F8B492500B76293 /* FMDatabasePool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		521D7EA41F8B492500B76293 /* FMDatabasePool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		521D7EA51F8B492500B76293 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		521D7EA61F8B492500B76293 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		521D7EA71F8B492500B76293 /* FMDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		521D7EA81F8B492500B76293 /* FMResultSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		521D7EA91F8B492500B76293 /* FMResultSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		521D7EAA1F8B492500B76293 /* NSObject+BGModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+BGModel.h"; sourceTree = "<group>"; };
+		521D7EAB1F8B492500B76293 /* NSObject+BGModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+BGModel.m"; sourceTree = "<group>"; };
+		521D7EAC1F8B4A3E00B76293 /* KEHomeBillModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KEHomeBillModel.h; sourceTree = "<group>"; };
+		521D7EAD1F8B4A3E00B76293 /* KEHomeBillModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KEHomeBillModel.m; sourceTree = "<group>"; };
+		521D7EAF1F8B4FD600B76293 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		521D7EBA1F8B66E100B76293 /* KEBillTypeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KEBillTypeModel.h; sourceTree = "<group>"; };
+		521D7EBB1F8B66E100B76293 /* KEBillTypeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KEBillTypeModel.m; sourceTree = "<group>"; };
+		521D7EC01F8BB11400B76293 /* KEBillTypeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEBillTypeViewModel.swift; sourceTree = "<group>"; };
+		521D7EC21F8DA08E00B76293 /* GATextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GATextField.m; sourceTree = "<group>"; };
+		521D7EC31F8DA08E00B76293 /* GATextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GATextField.h; sourceTree = "<group>"; };
+		523AA30D1F98D0F20088D557 /* LZBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZBaseViewController.h; sourceTree = "<group>"; };
+		523AA30E1F98D0F20088D557 /* LZBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZBaseViewController.m; sourceTree = "<group>"; };
+		523AA30F1F98D0F20088D557 /* LZPasswordView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZPasswordView.h; sourceTree = "<group>"; };
+		523AA3101F98D0F20088D557 /* LZPasswordView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZPasswordView.m; sourceTree = "<group>"; };
+		523AA3121F98D0F20088D557 /* LZTouchIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZTouchIDViewController.h; sourceTree = "<group>"; };
+		523AA3131F98D0F20088D557 /* LZTouchIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZTouchIDViewController.m; sourceTree = "<group>"; };
+		523AA3161F98D0F20088D557 /* gesture_unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_unlock.png; sourceTree = "<group>"; };
+		523AA3171F98D0F20088D557 /* gesture_unlock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_unlock@2x.png"; sourceTree = "<group>"; };
+		523AA3181F98D0F20088D557 /* TouchIdUnlock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchIdUnlock.h; sourceTree = "<group>"; };
+		523AA3191F98D0F20088D557 /* TouchIdUnlock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchIdUnlock.m; sourceTree = "<group>"; };
+		523AA31D1F98D0F20088D557 /* PCCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCircle.h; sourceTree = "<group>"; };
+		523AA31E1F98D0F20088D557 /* PCCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCircle.m; sourceTree = "<group>"; };
+		523AA31F1F98D0F20088D557 /* PCCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCircleView.h; sourceTree = "<group>"; };
+		523AA3201F98D0F20088D557 /* PCCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCircleView.m; sourceTree = "<group>"; };
+		523AA3211F98D0F20088D557 /* PCCircleViewConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PCCircleViewConst.h; sourceTree = "<group>"; };
+		523AA3221F98D0F20088D557 /* PCCircleViewConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PCCircleViewConst.m; sourceTree = "<group>"; };
+		523AA3241F98D0F20088D557 /* gesture_circle_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_circle_nor.png; sourceTree = "<group>"; };
+		523AA3251F98D0F20088D557 /* gesture_circle_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_circle_nor@2x.png"; sourceTree = "<group>"; };
+		523AA3261F98D0F20088D557 /* gesture_circle_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_circle_pre.png; sourceTree = "<group>"; };
+		523AA3271F98D0F20088D557 /* gesture_circle_pre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_circle_pre@2x.png"; sourceTree = "<group>"; };
+		523AA3281F98D0F20088D557 /* gesture_introduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_introduce.png; sourceTree = "<group>"; };
+		523AA3291F98D0F20088D557 /* gesture_introduce@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_introduce@2x.png"; sourceTree = "<group>"; };
+		523AA32A1F98D0F20088D557 /* gesture_introduce@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_introduce@3x.png"; sourceTree = "<group>"; };
+		523AA32B1F98D0F20088D557 /* gesture_unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_unlock.png; sourceTree = "<group>"; };
+		523AA32C1F98D0F20088D557 /* gesture_unlock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_unlock@2x.png"; sourceTree = "<group>"; };
+		523AA32E1F98D0F20088D557 /* LZGestureFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZGestureFile.h; sourceTree = "<group>"; };
+		523AA32F1F98D0F20088D557 /* LZGestureScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZGestureScreen.h; sourceTree = "<group>"; };
+		523AA3301F98D0F20088D557 /* LZGestureScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZGestureScreen.m; sourceTree = "<group>"; };
+		523AA3311F98D0F20088D557 /* LZGestureTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZGestureTool.h; sourceTree = "<group>"; };
+		523AA3321F98D0F20088D557 /* LZGestureTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZGestureTool.m; sourceTree = "<group>"; };
+		523AA3331F98D0F20088D557 /* LZGestureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZGestureViewController.h; sourceTree = "<group>"; };
+		523AA3341F98D0F20088D557 /* LZGestureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZGestureViewController.m; sourceTree = "<group>"; };
+		523AA3351F98D0F20088D557 /* LZWarnLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZWarnLabel.h; sourceTree = "<group>"; };
+		523AA3361F98D0F20088D557 /* LZWarnLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZWarnLabel.m; sourceTree = "<group>"; };
+		523AA3381F98D0F20088D557 /* LZGestureIntroduceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZGestureIntroduceViewController.h; sourceTree = "<group>"; };
+		523AA3391F98D0F20088D557 /* LZGestureIntroduceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZGestureIntroduceViewController.m; sourceTree = "<group>"; };
+		523AA33A1F98D0F20088D557 /* LZGestureSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZGestureSettingViewController.h; sourceTree = "<group>"; };
+		523AA33B1F98D0F20088D557 /* LZGestureSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZGestureSettingViewController.m; sourceTree = "<group>"; };
+		523AA33C1F98D0F20088D557 /* LZGestureSetupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZGestureSetupViewController.h; sourceTree = "<group>"; };
+		523AA33D1F98D0F20088D557 /* LZGestureSetupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZGestureSetupViewController.m; sourceTree = "<group>"; };
+		523AA3411F98D0F20088D557 /* DrawPatternLockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawPatternLockView.h; sourceTree = "<group>"; };
+		523AA3421F98D0F20088D557 /* DrawPatternLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPatternLockView.m; sourceTree = "<group>"; };
+		523AA3431F98D0F20088D557 /* DrawPatternLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawPatternLockViewController.h; sourceTree = "<group>"; };
+		523AA3441F98D0F20088D557 /* DrawPatternLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPatternLockViewController.m; sourceTree = "<group>"; };
+		523AA3451F98D0F20088D557 /* GestureInternalViews.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureInternalViews.h; sourceTree = "<group>"; };
+		523AA3461F98D0F20088D557 /* GestureInternalViews.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureInternalViews.m; sourceTree = "<group>"; };
+		523AA3471F98D0F20088D557 /* GestureLockScreen.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureLockScreen.h; sourceTree = "<group>"; };
+		523AA3481F98D0F20088D557 /* GestureLockScreen.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureLockScreen.m; sourceTree = "<group>"; };
+		523AA3491F98D0F20088D557 /* LFForgetPwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFForgetPwdViewController.h; sourceTree = "<group>"; };
+		523AA34A1F98D0F20088D557 /* LFForgetPwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFForgetPwdViewController.m; sourceTree = "<group>"; };
+		523AA34B1F98D0F20088D557 /* LFForgetPwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFForgetPwdViewController.xib; sourceTree = "<group>"; };
+		523AA34D1F98D0F20088D557 /* gesture_circle_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_circle_nor.png; sourceTree = "<group>"; };
+		523AA34E1F98D0F20088D557 /* gesture_circle_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_circle_nor@2x.png"; sourceTree = "<group>"; };
+		523AA34F1F98D0F20088D557 /* gesture_circle_pre.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_circle_pre.png; sourceTree = "<group>"; };
+		523AA3501F98D0F20088D557 /* gesture_circle_pre@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_circle_pre@2x.png"; sourceTree = "<group>"; };
+		523AA3511F98D0F20088D557 /* gesture_introduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_introduce.png; sourceTree = "<group>"; };
+		523AA3521F98D0F20088D557 /* gesture_introduce@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_introduce@2x.png"; sourceTree = "<group>"; };
+		523AA3531F98D0F20088D557 /* gesture_introduce@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_introduce@3x.png"; sourceTree = "<group>"; };
+		523AA3541F98D0F20088D557 /* gesture_unlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gesture_unlock.png; sourceTree = "<group>"; };
+		523AA3551F98D0F20088D557 /* gesture_unlock@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gesture_unlock@2x.png"; sourceTree = "<group>"; };
+		523AA3571F98D0F20088D557 /* GestureDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureDefine.h; sourceTree = "<group>"; };
+		523AA3581F98D0F20088D557 /* GestureTool_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureTool_Private.h; sourceTree = "<group>"; };
+		523AA3591F98D0F20088D557 /* GestureTool_Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureTool_Private.m; sourceTree = "<group>"; };
+		523AA35A1F98D0F20088D557 /* GestureTool_Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GestureTool_Public.h; sourceTree = "<group>"; };
+		523AA35B1F98D0F20088D557 /* GestureTool_Public.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GestureTool_Public.m; sourceTree = "<group>"; };
+		523AA35C1F98D0F20088D557 /* SystemDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemDefine.h; sourceTree = "<group>"; };
+		523AA35F1F98D0F20088D557 /* LZItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZItem.h; sourceTree = "<group>"; };
+		523AA3601F98D0F20088D557 /* LZItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZItem.m; sourceTree = "<group>"; };
+		523AA3611F98D0F20088D557 /* LZNumberTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZNumberTool.h; sourceTree = "<group>"; };
+		523AA3621F98D0F20088D557 /* LZNumberTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZNumberTool.m; sourceTree = "<group>"; };
+		523AA3631F98D0F20088D557 /* LZNumberView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZNumberView.h; sourceTree = "<group>"; };
+		523AA3641F98D0F20088D557 /* LZNumberView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZNumberView.m; sourceTree = "<group>"; };
+		523AA3651F98D0F20088D557 /* LZPasswordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZPasswordViewController.h; sourceTree = "<group>"; };
+		523AA3661F98D0F20088D557 /* LZPasswordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZPasswordViewController.m; sourceTree = "<group>"; };
+		523AA3671F98D0F20088D557 /* LZNumSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZNumSettingViewController.h; sourceTree = "<group>"; };
+		523AA3681F98D0F20088D557 /* LZNumSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZNumSettingViewController.m; sourceTree = "<group>"; };
+		523AA36A1F98D0F20088D557 /* LZScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZScreenViewController.h; sourceTree = "<group>"; };
+		523AA36B1F98D0F20088D557 /* LZScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZScreenViewController.m; sourceTree = "<group>"; };
+		523AA36D1F98D2DE0088D557 /* LZPch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZPch.h; sourceTree = "<group>"; };
+		523AA37D1F98D8B80088D557 /* LZImportFiles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LZImportFiles.h; sourceTree = "<group>"; };
+		523AA37E1F98D8B80088D557 /* LZImportFiles.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LZImportFiles.m; sourceTree = "<group>"; };
+		523AA3811F98DB540088D557 /* arrow_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_down@2x.png"; sourceTree = "<group>"; };
+		523AA3821F98DB540088D557 /* arrow_right@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_right@2x.png"; sourceTree = "<group>"; };
+		523AA3831F98DB540088D557 /* arrow_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow_up@2x.png"; sourceTree = "<group>"; };
+		523AA3841F98DB540088D557 /* butt_18@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "butt_18@2x.png"; sourceTree = "<group>"; };
+		523AA3851F98DB540088D557 /* butt_18@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "butt_18@3x.png"; sourceTree = "<group>"; };
+		523AA3861F98DB540088D557 /* hiddenPSW@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hiddenPSW@2x.png"; sourceTree = "<group>"; };
+		523AA3871F98DB540088D557 /* home_@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home_@2x.png"; sourceTree = "<group>"; };
+		523AA3881F98DB540088D557 /* houtui@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "houtui@2x.png"; sourceTree = "<group>"; };
+		523AA3891F98DB540088D557 /* houtui@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "houtui@3x.png"; sourceTree = "<group>"; };
+		523AA38A1F98DB540088D557 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		523AA38B1F98DB540088D557 /* lunch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lunch@2x.png"; sourceTree = "<group>"; };
+		523AA38C1F98DB540088D557 /* setting_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting_icon@2x.png"; sourceTree = "<group>"; };
+		523AA38D1F98DB540088D557 /* showPSW@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "showPSW@2x.png"; sourceTree = "<group>"; };
+		523AA38E1F98DB540088D557 /* warn@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "warn@2x.png"; sourceTree = "<group>"; };
+		52805FC01F7CA2E8008A6217 /* KEChargeUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEChargeUpViewController.swift; sourceTree = "<group>"; };
+		52805FC21F7DE502008A6217 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		52805FC41F8A0154008A6217 /* Category.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Category.plist; sourceTree = "<group>"; };
+		52805FC61F8A1755008A6217 /* KECategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KECategoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		52805FC71F8A1755008A6217 /* KECategoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KECategoryCollectionViewCell.xib; sourceTree = "<group>"; };
+		52805FCF1F8B3059008A6217 /* KEHomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEHomeDetailViewController.swift; sourceTree = "<group>"; };
+		528582081F7B34BF00D4F19A /* KE-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KE-Bridging-Header.h"; sourceTree = "<group>"; };
+		52C124B91F90483E004D1D70 /* KEBillDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEBillDetailTableViewCell.swift; sourceTree = "<group>"; };
+		52C124BA1F90483E004D1D70 /* KEBillDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KEBillDetailTableViewCell.xib; sourceTree = "<group>"; };
+		52C153A41F94A082009ED700 /* WKCustomeRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKCustomeRefreshHeader.swift; sourceTree = "<group>"; };
+		52C153A71F959B29009ED700 /* PNLineChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNLineChart.swift; sourceTree = "<group>"; };
+		52C153A81F959B29009ED700 /* PNLineChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNLineChartData.swift; sourceTree = "<group>"; };
+		52C153A91F959B29009ED700 /* PNLineChartDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNLineChartDataItem.swift; sourceTree = "<group>"; };
+		52C153AA1F959B8A009ED700 /* KEChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEChartViewController.swift; sourceTree = "<group>"; };
+		52C153AC1F959CFE009ED700 /* KEChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEChartViewModel.swift; sourceTree = "<group>"; };
+		52C153B11F959F63009ED700 /* PNColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNColor.swift; sourceTree = "<group>"; };
+		52C153B31F959F68009ED700 /* PNValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNValue.swift; sourceTree = "<group>"; };
+		52C153B51F959FC0009ED700 /* PNGenericChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNGenericChart.swift; sourceTree = "<group>"; };
+		52C153B71F959FCB009ED700 /* PNChartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PNChartLabel.swift; sourceTree = "<group>"; };
+		52C153B91F95C460009ED700 /* KECustomTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KECustomTool.h; sourceTree = "<group>"; };
+		52C153BA1F95C460009ED700 /* KECustomTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KECustomTool.m; sourceTree = "<group>"; };
 		52C7E81F1F6F73D4008E7E86 /* KETallyBOOK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KETallyBOOK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52C7E8221F6F73D4008E7E86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52C7E8241F6F73D4008E7E86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		52C7E8271F6F73D4008E7E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52C7E8291F6F73D4008E7E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52C7E82C1F6F73D4008E7E86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52C7E82E1F6F73D4008E7E86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52C7E8381F6FAAB4008E7E86 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		52C7E83E1F6FB320008E7E86 /* KECustomTabBarControllerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KECustomTabBarControllerConfig.swift; sourceTree = "<group>"; };
+		52C7E8411F6FB3F2008E7E86 /* KECustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KECustomTabBarController.swift; sourceTree = "<group>"; };
+		52C7E8431F6FB800008E7E86 /* KECustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KECustomTabBar.swift; sourceTree = "<group>"; };
+		52C7E8451F70B6A7008E7E86 /* KECustomTabBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KECustomTabBarButton.swift; sourceTree = "<group>"; };
+		52D941A01F73B8310006F140 /* KEHomeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEHomeDetailViewModel.swift; sourceTree = "<group>"; };
+		52DBE2FD1F7108680086221E /* KEViewModelServicesImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEViewModelServicesImpl.swift; sourceTree = "<group>"; };
+		52DBE2FF1F73590D0086221E /* KEConfigBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEConfigBaseNavigationController.swift; sourceTree = "<group>"; };
+		52DBE3151F73701C0086221E /* KEBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEBaseViewController.swift; sourceTree = "<group>"; };
+		52DBE3171F7371DC0086221E /* KEViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEViewModel.swift; sourceTree = "<group>"; };
+		52DBE3191F73A4700086221E /* KEViewModelService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KEViewModelService.swift; sourceTree = "<group>"; };
+		52E7BC441F8E0C1700ACAFFC /* 背景.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "背景.jpg"; path = "KETallyBOOK/背景.jpg"; sourceTree = "<group>"; };
+		E662CAE3AF0C2F70BB6533FE /* Pods_KETallyBOOK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KETallyBOOK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +276,411 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521D7EB01F8B4FD600B76293 /* libsqlite3.tbd in Frameworks */,
+				2B7F1ACCA0C39F2D49A1B2AD /* Pods_KETallyBOOK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04C14D05B603925D310C8EC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				521D7EAF1F8B4FD600B76293 /* libsqlite3.tbd */,
+				E662CAE3AF0C2F70BB6533FE /* Pods_KETallyBOOK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52176B151F96E5FD004D9716 /* SLChartSFiles */ = {
+			isa = PBXGroup;
+			children = (
+				52176B161F96E5FD004D9716 /* HighLightFormatter.h */,
+				52176B171F96E5FD004D9716 /* HighLightFormatter.m */,
+				52176B181F96E5FD004D9716 /* XAxisFormtter.h */,
+				52176B191F96E5FD004D9716 /* XAxisFormtter.m */,
+				52176B1A1F96E5FD004D9716 /* YAxisFormtter.h */,
+				52176B1B1F96E5FD004D9716 /* YAxisFormtter.m */,
+				52176B1C1F96E5FD004D9716 /* YRightAxisFormtter.h */,
+				52176B1D1F96E5FD004D9716 /* YRightAxisFormtter.m */,
+			);
+			path = SLChartSFiles;
+			sourceTree = "<group>";
+		};
+		52176B281F98724D004D9716 /* WRCellView */ = {
+			isa = PBXGroup;
+			children = (
+				52176B291F98724D004D9716 /* WRCellView.h */,
+				52176B2A1F98724D004D9716 /* WRCellView.m */,
+			);
+			path = WRCellView;
+			sourceTree = "<group>";
+		};
+		521D7E961F8B492500B76293 /* BGFMDB */ = {
+			isa = PBXGroup;
+			children = (
+				521D7E971F8B492500B76293 /* libs */,
+			);
+			path = BGFMDB;
+			sourceTree = "<group>";
+		};
+		521D7E971F8B492500B76293 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				521D7E981F8B492500B76293 /* BGFMDB.h */,
+				521D7E991F8B492500B76293 /* BGFMDB.m */,
+				521D7E9A1F8B492500B76293 /* BGFMDBConfig.h */,
+				521D7E9B1F8B492500B76293 /* BGModelInfo.h */,
+				521D7E9C1F8B492500B76293 /* BGModelInfo.m */,
+				521D7E9D1F8B492500B76293 /* BGTool.h */,
+				521D7E9E1F8B492500B76293 /* BGTool.m */,
+				521D7E9F1F8B492500B76293 /* FMDatabase.h */,
+				521D7EA01F8B492500B76293 /* FMDatabase.m */,
+				521D7EA11F8B492500B76293 /* FMDatabaseAdditions.h */,
+				521D7EA21F8B492500B76293 /* FMDatabaseAdditions.m */,
+				521D7EA31F8B492500B76293 /* FMDatabasePool.h */,
+				521D7EA41F8B492500B76293 /* FMDatabasePool.m */,
+				521D7EA51F8B492500B76293 /* FMDatabaseQueue.h */,
+				521D7EA61F8B492500B76293 /* FMDatabaseQueue.m */,
+				521D7EA71F8B492500B76293 /* FMDB.h */,
+				521D7EA81F8B492500B76293 /* FMResultSet.h */,
+				521D7EA91F8B492500B76293 /* FMResultSet.m */,
+				521D7EAA1F8B492500B76293 /* NSObject+BGModel.h */,
+				521D7EAB1F8B492500B76293 /* NSObject+BGModel.m */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		523AA30C1F98D0F20088D557 /* LZAccount */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3801F98DB540088D557 /* 图标 */,
+				523AA30D1F98D0F20088D557 /* LZBaseViewController.h */,
+				523AA30E1F98D0F20088D557 /* LZBaseViewController.m */,
+				523AA30F1F98D0F20088D557 /* LZPasswordView.h */,
+				523AA3101F98D0F20088D557 /* LZPasswordView.m */,
+				523AA3111F98D0F20088D557 /* 设置TouchID */,
+				523AA31A1F98D0F20088D557 /* 设置手势密码 */,
+				523AA35D1F98D0F20088D557 /* 设置数字密码 */,
+				523AA3691F98D0F20088D557 /* 锁屏管理 */,
+				523AA36D1F98D2DE0088D557 /* LZPch.h */,
+				523AA37D1F98D8B80088D557 /* LZImportFiles.h */,
+				523AA37E1F98D8B80088D557 /* LZImportFiles.m */,
+			);
+			path = LZAccount;
+			sourceTree = "<group>";
+		};
+		523AA3111F98D0F20088D557 /* 设置TouchID */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3121F98D0F20088D557 /* LZTouchIDViewController.h */,
+				523AA3131F98D0F20088D557 /* LZTouchIDViewController.m */,
+				523AA3141F98D0F20088D557 /* TouchIDClass */,
+			);
+			path = "设置TouchID";
+			sourceTree = "<group>";
+		};
+		523AA3141F98D0F20088D557 /* TouchIDClass */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3151F98D0F20088D557 /* images */,
+				523AA3181F98D0F20088D557 /* TouchIdUnlock.h */,
+				523AA3191F98D0F20088D557 /* TouchIdUnlock.m */,
+			);
+			path = TouchIDClass;
+			sourceTree = "<group>";
+		};
+		523AA3151F98D0F20088D557 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3161F98D0F20088D557 /* gesture_unlock.png */,
+				523AA3171F98D0F20088D557 /* gesture_unlock@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		523AA31A1F98D0F20088D557 /* 设置手势密码 */ = {
+			isa = PBXGroup;
+			children = (
+				523AA31B1F98D0F20088D557 /* LZGestureSecurity */,
+				523AA3371F98D0F20088D557 /* LZGestureSetting */,
+				523AA33E1F98D0F20088D557 /* PasswordClass */,
+			);
+			path = "设置手势密码";
+			sourceTree = "<group>";
+		};
+		523AA31B1F98D0F20088D557 /* LZGestureSecurity */ = {
+			isa = PBXGroup;
+			children = (
+				523AA31C1F98D0F20088D557 /* FrameWork */,
+				523AA3231F98D0F20088D557 /* GestureImages */,
+				523AA32D1F98D0F20088D557 /* LZGesture */,
+			);
+			path = LZGestureSecurity;
+			sourceTree = "<group>";
+		};
+		523AA31C1F98D0F20088D557 /* FrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				523AA31D1F98D0F20088D557 /* PCCircle.h */,
+				523AA31E1F98D0F20088D557 /* PCCircle.m */,
+				523AA31F1F98D0F20088D557 /* PCCircleView.h */,
+				523AA3201F98D0F20088D557 /* PCCircleView.m */,
+				523AA3211F98D0F20088D557 /* PCCircleViewConst.h */,
+				523AA3221F98D0F20088D557 /* PCCircleViewConst.m */,
+			);
+			path = FrameWork;
+			sourceTree = "<group>";
+		};
+		523AA3231F98D0F20088D557 /* GestureImages */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3241F98D0F20088D557 /* gesture_circle_nor.png */,
+				523AA3251F98D0F20088D557 /* gesture_circle_nor@2x.png */,
+				523AA3261F98D0F20088D557 /* gesture_circle_pre.png */,
+				523AA3271F98D0F20088D557 /* gesture_circle_pre@2x.png */,
+				523AA3281F98D0F20088D557 /* gesture_introduce.png */,
+				523AA3291F98D0F20088D557 /* gesture_introduce@2x.png */,
+				523AA32A1F98D0F20088D557 /* gesture_introduce@3x.png */,
+				523AA32B1F98D0F20088D557 /* gesture_unlock.png */,
+				523AA32C1F98D0F20088D557 /* gesture_unlock@2x.png */,
+			);
+			path = GestureImages;
+			sourceTree = "<group>";
+		};
+		523AA32D1F98D0F20088D557 /* LZGesture */ = {
+			isa = PBXGroup;
+			children = (
+				523AA32E1F98D0F20088D557 /* LZGestureFile.h */,
+				523AA32F1F98D0F20088D557 /* LZGestureScreen.h */,
+				523AA3301F98D0F20088D557 /* LZGestureScreen.m */,
+				523AA3311F98D0F20088D557 /* LZGestureTool.h */,
+				523AA3321F98D0F20088D557 /* LZGestureTool.m */,
+				523AA3331F98D0F20088D557 /* LZGestureViewController.h */,
+				523AA3341F98D0F20088D557 /* LZGestureViewController.m */,
+				523AA3351F98D0F20088D557 /* LZWarnLabel.h */,
+				523AA3361F98D0F20088D557 /* LZWarnLabel.m */,
+			);
+			path = LZGesture;
+			sourceTree = "<group>";
+		};
+		523AA3371F98D0F20088D557 /* LZGestureSetting */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3381F98D0F20088D557 /* LZGestureIntroduceViewController.h */,
+				523AA3391F98D0F20088D557 /* LZGestureIntroduceViewController.m */,
+				523AA33A1F98D0F20088D557 /* LZGestureSettingViewController.h */,
+				523AA33B1F98D0F20088D557 /* LZGestureSettingViewController.m */,
+				523AA33C1F98D0F20088D557 /* LZGestureSetupViewController.h */,
+				523AA33D1F98D0F20088D557 /* LZGestureSetupViewController.m */,
+			);
+			path = LZGestureSetting;
+			sourceTree = "<group>";
+		};
+		523AA33E1F98D0F20088D557 /* PasswordClass */ = {
+			isa = PBXGroup;
+			children = (
+				523AA33F1F98D0F20088D557 /* GesturePwd */,
+				523AA35C1F98D0F20088D557 /* SystemDefine.h */,
+			);
+			path = PasswordClass;
+			sourceTree = "<group>";
+		};
+		523AA33F1F98D0F20088D557 /* GesturePwd */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3401F98D0F20088D557 /* GestureClass */,
+				523AA34C1F98D0F20088D557 /* GestureImages */,
+				523AA3561F98D0F20088D557 /* GestureTools */,
+			);
+			path = GesturePwd;
+			sourceTree = "<group>";
+		};
+		523AA3401F98D0F20088D557 /* GestureClass */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3411F98D0F20088D557 /* DrawPatternLockView.h */,
+				523AA3421F98D0F20088D557 /* DrawPatternLockView.m */,
+				523AA3431F98D0F20088D557 /* DrawPatternLockViewController.h */,
+				523AA3441F98D0F20088D557 /* DrawPatternLockViewController.m */,
+				523AA3451F98D0F20088D557 /* GestureInternalViews.h */,
+				523AA3461F98D0F20088D557 /* GestureInternalViews.m */,
+				523AA3471F98D0F20088D557 /* GestureLockScreen.h */,
+				523AA3481F98D0F20088D557 /* GestureLockScreen.m */,
+				523AA3491F98D0F20088D557 /* LFForgetPwdViewController.h */,
+				523AA34A1F98D0F20088D557 /* LFForgetPwdViewController.m */,
+				523AA34B1F98D0F20088D557 /* LFForgetPwdViewController.xib */,
+			);
+			path = GestureClass;
+			sourceTree = "<group>";
+		};
+		523AA34C1F98D0F20088D557 /* GestureImages */ = {
+			isa = PBXGroup;
+			children = (
+				523AA34D1F98D0F20088D557 /* gesture_circle_nor.png */,
+				523AA34E1F98D0F20088D557 /* gesture_circle_nor@2x.png */,
+				523AA34F1F98D0F20088D557 /* gesture_circle_pre.png */,
+				523AA3501F98D0F20088D557 /* gesture_circle_pre@2x.png */,
+				523AA3511F98D0F20088D557 /* gesture_introduce.png */,
+				523AA3521F98D0F20088D557 /* gesture_introduce@2x.png */,
+				523AA3531F98D0F20088D557 /* gesture_introduce@3x.png */,
+				523AA3541F98D0F20088D557 /* gesture_unlock.png */,
+				523AA3551F98D0F20088D557 /* gesture_unlock@2x.png */,
+			);
+			path = GestureImages;
+			sourceTree = "<group>";
+		};
+		523AA3561F98D0F20088D557 /* GestureTools */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3571F98D0F20088D557 /* GestureDefine.h */,
+				523AA3581F98D0F20088D557 /* GestureTool_Private.h */,
+				523AA3591F98D0F20088D557 /* GestureTool_Private.m */,
+				523AA35A1F98D0F20088D557 /* GestureTool_Public.h */,
+				523AA35B1F98D0F20088D557 /* GestureTool_Public.m */,
+			);
+			path = GestureTools;
+			sourceTree = "<group>";
+		};
+		523AA35D1F98D0F20088D557 /* 设置数字密码 */ = {
+			isa = PBXGroup;
+			children = (
+				523AA35E1F98D0F20088D557 /* LZClass */,
+				523AA3671F98D0F20088D557 /* LZNumSettingViewController.h */,
+				523AA3681F98D0F20088D557 /* LZNumSettingViewController.m */,
+			);
+			path = "设置数字密码";
+			sourceTree = "<group>";
+		};
+		523AA35E1F98D0F20088D557 /* LZClass */ = {
+			isa = PBXGroup;
+			children = (
+				523AA35F1F98D0F20088D557 /* LZItem.h */,
+				523AA3601F98D0F20088D557 /* LZItem.m */,
+				523AA3611F98D0F20088D557 /* LZNumberTool.h */,
+				523AA3621F98D0F20088D557 /* LZNumberTool.m */,
+				523AA3631F98D0F20088D557 /* LZNumberView.h */,
+				523AA3641F98D0F20088D557 /* LZNumberView.m */,
+				523AA3651F98D0F20088D557 /* LZPasswordViewController.h */,
+				523AA3661F98D0F20088D557 /* LZPasswordViewController.m */,
+			);
+			path = LZClass;
+			sourceTree = "<group>";
+		};
+		523AA3691F98D0F20088D557 /* 锁屏管理 */ = {
+			isa = PBXGroup;
+			children = (
+				523AA36A1F98D0F20088D557 /* LZScreenViewController.h */,
+				523AA36B1F98D0F20088D557 /* LZScreenViewController.m */,
+			);
+			path = "锁屏管理";
+			sourceTree = "<group>";
+		};
+		523AA3801F98DB540088D557 /* 图标 */ = {
+			isa = PBXGroup;
+			children = (
+				523AA3811F98DB540088D557 /* arrow_down@2x.png */,
+				523AA3821F98DB540088D557 /* arrow_right@2x.png */,
+				523AA3831F98DB540088D557 /* arrow_up@2x.png */,
+				523AA3841F98DB540088D557 /* butt_18@2x.png */,
+				523AA3851F98DB540088D557 /* butt_18@3x.png */,
+				523AA3861F98DB540088D557 /* hiddenPSW@2x.png */,
+				523AA3871F98DB540088D557 /* home_@2x.png */,
+				523AA3881F98DB540088D557 /* houtui@2x.png */,
+				523AA3891F98DB540088D557 /* houtui@3x.png */,
+				523AA38A1F98DB540088D557 /* icon@2x.png */,
+				523AA38B1F98DB540088D557 /* lunch@2x.png */,
+				523AA38C1F98DB540088D557 /* setting_icon@2x.png */,
+				523AA38D1F98DB540088D557 /* showPSW@2x.png */,
+				523AA38E1F98DB540088D557 /* warn@2x.png */,
+			);
+			path = "图标";
+			sourceTree = "<group>";
+		};
+		52805FB91F7C7DE0008A6217 /* ChargeUp */ = {
+			isa = PBXGroup;
+			children = (
+				52805FBA1F7C7DE0008A6217 /* Controller */,
+				52805FBB1F7C7DE0008A6217 /* Model */,
+				52805FBC1F7C7DE0008A6217 /* viewModel */,
+				52805FBD1F7C7DE0008A6217 /* Views */,
+			);
+			path = ChargeUp;
+			sourceTree = "<group>";
+		};
+		52805FBA1F7C7DE0008A6217 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52805FC01F7CA2E8008A6217 /* KEChargeUpViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52805FBB1F7C7DE0008A6217 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				521D7EBA1F8B66E100B76293 /* KEBillTypeModel.h */,
+				521D7EBB1F8B66E100B76293 /* KEBillTypeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52805FBC1F7C7DE0008A6217 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				521D7EC01F8BB11400B76293 /* KEBillTypeViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		52805FBD1F7C7DE0008A6217 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				521D7EC31F8DA08E00B76293 /* GATextField.h */,
+				521D7EC21F8DA08E00B76293 /* GATextField.m */,
+				52805FC61F8A1755008A6217 /* KECategoryCollectionViewCell.swift */,
+				52805FC71F8A1755008A6217 /* KECategoryCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52805FCA1F8B1049008A6217 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				523AA30C1F98D0F20088D557 /* LZAccount */,
+				52176B281F98724D004D9716 /* WRCellView */,
+				52176B151F96E5FD004D9716 /* SLChartSFiles */,
+				52C153A61F959B29009ED700 /* PNLineChart */,
+				521D7E961F8B492500B76293 /* BGFMDB */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		52C153A61F959B29009ED700 /* PNLineChart */ = {
+			isa = PBXGroup;
+			children = (
+				52C153B71F959FCB009ED700 /* PNChartLabel.swift */,
+				52C153B51F959FC0009ED700 /* PNGenericChart.swift */,
+				52C153B31F959F68009ED700 /* PNValue.swift */,
+				52C153B11F959F63009ED700 /* PNColor.swift */,
+				52C153A71F959B29009ED700 /* PNLineChart.swift */,
+				52C153A81F959B29009ED700 /* PNLineChartData.swift */,
+				52C153A91F959B29009ED700 /* PNLineChartDataItem.swift */,
+			);
+			path = PNLineChart;
+			sourceTree = "<group>";
+		};
 		52C7E8161F6F73D4008E7E86 = {
 			isa = PBXGroup;
 			children = (
+				52E7BC441F8E0C1700ACAFFC /* 背景.jpg */,
+				52805FC41F8A0154008A6217 /* Category.plist */,
+				528582081F7B34BF00D4F19A /* KE-Bridging-Header.h */,
 				52C7E8211F6F73D4008E7E86 /* KETallyBOOK */,
 				52C7E8201F6F73D4008E7E86 /* Products */,
+				7E7CF56CED384A2C1DB6D68F /* Pods */,
+				04C14D05B603925D310C8EC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +695,320 @@
 		52C7E8211F6F73D4008E7E86 /* KETallyBOOK */ = {
 			isa = PBXGroup;
 			children = (
+				52C7E8341F6FAA15008E7E86 /* Application */,
+				52C7E83A1F6FB2CE008E7E86 /* Classes */,
+				52C7E8351F6FAA21008E7E86 /* Tool */,
 				52C7E8221F6F73D4008E7E86 /* AppDelegate.swift */,
-				52C7E8241F6F73D4008E7E86 /* ViewController.swift */,
-				52C7E8261F6F73D4008E7E86 /* Main.storyboard */,
+				52805FC21F7DE502008A6217 /* splash.png */,
 				52C7E8291F6F73D4008E7E86 /* Assets.xcassets */,
 				52C7E82B1F6F73D4008E7E86 /* LaunchScreen.storyboard */,
 				52C7E82E1F6F73D4008E7E86 /* Info.plist */,
 			);
 			path = KETallyBOOK;
+			sourceTree = "<group>";
+		};
+		52C7E8341F6FAA15008E7E86 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = SOURCE_ROOT;
+		};
+		52C7E8351F6FAA21008E7E86 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				52805FCA1F8B1049008A6217 /* Vendor */,
+				52C7E8361F6FAA21008E7E86 /* Utils */,
+				52C153A41F94A082009ED700 /* WKCustomeRefreshHeader.swift */,
+				52C153B91F95C460009ED700 /* KECustomTool.h */,
+				52C153BA1F95C460009ED700 /* KECustomTool.m */,
+			);
+			path = Tool;
+			sourceTree = SOURCE_ROOT;
+		};
+		52C7E8361F6FAA21008E7E86 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				52C7E8371F6FAA9B008E7E86 /* Global */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		52C7E8371F6FAA9B008E7E86 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				52C7E8381F6FAAB4008E7E86 /* Global.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		52C7E83A1F6FB2CE008E7E86 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				52C7E83B1F6FB2CE008E7E86 /* Main */,
+				52DBE3061F736CA80086221E /* Detail */,
+				52805FB91F7C7DE0008A6217 /* ChargeUp */,
+				52DBE30B1F736CA80086221E /* Chart */,
+				52DBE3101F736CA80086221E /* Find */,
+				52DBE3011F736CA80086221E /* Setting */,
+			);
+			path = Classes;
+			sourceTree = SOURCE_ROOT;
+		};
+		52C7E83B1F6FB2CE008E7E86 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				52C7E83C1F6FB2CE008E7E86 /* Base */,
+				52C7E83D1F6FB2CE008E7E86 /* TabBarConfig */,
+				52C7E8401F6FB38D008E7E86 /* TabBarController */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		52C7E83C1F6FB2CE008E7E86 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				52DBE2FA1F71082B0086221E /* Controller */,
+				52DBE2FC1F71082C0086221E /* Model */,
+				52DBE2F91F71082B0086221E /* viewModel */,
+				52DBE2FB1F71082C0086221E /* views */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		52C7E83D1F6FB2CE008E7E86 /* TabBarConfig */ = {
+			isa = PBXGroup;
+			children = (
+				52C7E83E1F6FB320008E7E86 /* KECustomTabBarControllerConfig.swift */,
+				52DBE2FF1F73590D0086221E /* KEConfigBaseNavigationController.swift */,
+			);
+			path = TabBarConfig;
+			sourceTree = "<group>";
+		};
+		52C7E8401F6FB38D008E7E86 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				52C7E8411F6FB3F2008E7E86 /* KECustomTabBarController.swift */,
+				52C7E8431F6FB800008E7E86 /* KECustomTabBar.swift */,
+				52C7E8451F70B6A7008E7E86 /* KECustomTabBarButton.swift */,
+			);
+			path = TabBarController;
+			sourceTree = "<group>";
+		};
+		52DBE2F91F71082B0086221E /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52DBE2FD1F7108680086221E /* KEViewModelServicesImpl.swift */,
+				52DBE3171F7371DC0086221E /* KEViewModel.swift */,
+				52DBE3191F73A4700086221E /* KEViewModelService.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		52DBE2FA1F71082B0086221E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52DBE3151F73701C0086221E /* KEBaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52DBE2FB1F71082C0086221E /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		52DBE2FC1F71082C0086221E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				520D9AF71F749DE6008B1F93 /* KEViewModelProtocolImpl.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52DBE3011F736CA80086221E /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				52DBE3021F736CA80086221E /* Controller */,
+				52DBE3031F736CA80086221E /* Model */,
+				52DBE3041F736CA80086221E /* viewModel */,
+				52DBE3051F736CA80086221E /* Views */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		52DBE3021F736CA80086221E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52176B2B1F987272004D9716 /* KESettingController.h */,
+				52176B2C1F987272004D9716 /* KESettingController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52DBE3031F736CA80086221E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52DBE3041F736CA80086221E /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		52DBE3051F736CA80086221E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52DBE3061F736CA80086221E /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				52DBE3071F736CA80086221E /* Controller */,
+				52DBE3081F736CA80086221E /* Model */,
+				52DBE3091F736CA80086221E /* viewModel */,
+				52DBE30A1F736CA80086221E /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		52DBE3071F736CA80086221E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52805FCF1F8B3059008A6217 /* KEHomeDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52DBE3081F736CA80086221E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				521D7EAC1F8B4A3E00B76293 /* KEHomeBillModel.h */,
+				521D7EAD1F8B4A3E00B76293 /* KEHomeBillModel.m */,
+				520D9AFB1F74AACD008B1F93 /* KEHomeDetailProtocolImpl.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52DBE3091F736CA80086221E /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52D941A01F73B8310006F140 /* KEHomeDetailViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		52DBE30A1F736CA80086221E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5211D2851F78A746005CA7CA /* KETallyHeadView.swift */,
+				52C124B91F90483E004D1D70 /* KEBillDetailTableViewCell.swift */,
+				52C124BA1F90483E004D1D70 /* KEBillDetailTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52DBE30B1F736CA80086221E /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				52DBE30C1F736CA80086221E /* Controller */,
+				52DBE30D1F736CA80086221E /* Model */,
+				52DBE30E1F736CA80086221E /* viewModel */,
+				52DBE30F1F736CA80086221E /* Views */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		52DBE30C1F736CA80086221E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52C153AA1F959B8A009ED700 /* KEChartViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52DBE30D1F736CA80086221E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52DBE30E1F736CA80086221E /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52C153AC1F959CFE009ED700 /* KEChartViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		52DBE30F1F736CA80086221E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52176B121F96E2B9004D9716 /* KEChartView.h */,
+				52176B131F96E2B9004D9716 /* KEChartView.m */,
+				52176B241F971F85004D9716 /* KEChartTopTableViewCell.swift */,
+				52176B251F971F85004D9716 /* KEChartTopTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		52DBE3101F736CA80086221E /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				52DBE3111F736CA80086221E /* Controller */,
+				52DBE3121F736CA80086221E /* Model */,
+				52DBE3131F736CA80086221E /* viewModel */,
+				52DBE3141F736CA80086221E /* Views */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		52DBE3111F736CA80086221E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				52176B2F1F9881FC004D9716 /* KEFindViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		52DBE3121F736CA80086221E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52DBE3131F736CA80086221E /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		52DBE3141F736CA80086221E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				52176B301F9881FC004D9716 /* KEFindViewController.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7E7CF56CED384A2C1DB6D68F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E11973E6F6477D77A0F19ED /* Pods-KETallyBOOK.debug.xcconfig */,
+				11FBD62B0E1106D7B4EB8795 /* Pods-KETallyBOOK.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +1018,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C7E8311F6F73D4008E7E86 /* Build configuration list for PBXNativeTarget "KETallyBOOK" */;
 			buildPhases = (
+				89CEE6DEAF93309823A4D7FC /* [CP] Check Pods Manifest.lock */,
 				52C7E81B1F6F73D4008E7E86 /* Sources */,
 				52C7E81C1F6F73D4008E7E86 /* Frameworks */,
 				52C7E81D1F6F73D4008E7E86 /* Resources */,
+				DC0ED82F7EAC955F0A0742AC /* [CP] Embed Pods Frameworks */,
+				50288CA184C9381BAE500C7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,35 +1073,142 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52C124BC1F90483E004D1D70 /* KEBillDetailTableViewCell.xib in Resources */,
+				52805FC91F8A1755008A6217 /* KECategoryCollectionViewCell.xib in Resources */,
+				52176B271F971F85004D9716 /* KEChartTopTableViewCell.xib in Resources */,
 				52C7E82D1F6F73D4008E7E86 /* LaunchScreen.storyboard in Resources */,
+				52805FC51F8A0154008A6217 /* Category.plist in Resources */,
+				52176B321F9881FC004D9716 /* KEFindViewController.xib in Resources */,
 				52C7E82A1F6F73D4008E7E86 /* Assets.xcassets in Resources */,
-				52C7E8281F6F73D4008E7E86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		50288CA184C9381BAE500C7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KETallyBOOK/Pods-KETallyBOOK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89CEE6DEAF93309823A4D7FC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DC0ED82F7EAC955F0A0742AC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KETallyBOOK/Pods-KETallyBOOK-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52C7E81B1F6F73D4008E7E86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52C7E8251F6F73D4008E7E86 /* ViewController.swift in Sources */,
+				523AA3901F98DD230088D557 /* LZNumSettingViewController.m in Sources */,
+				523AA38F1F98DD1B0088D557 /* LZTouchIDViewController.m in Sources */,
+				523AA37C1F98D7470088D557 /* PCCircle.m in Sources */,
+				523AA37B1F98D72C0088D557 /* LZItem.m in Sources */,
+				523AA37A1F98D7240088D557 /* PCCircleViewConst.m in Sources */,
+				523AA3791F98D71B0088D557 /* PCCircleView.m in Sources */,
+				523AA3781F98D7120088D557 /* LZWarnLabel.m in Sources */,
+				523AA3771F98D70B0088D557 /* LZGestureScreen.m in Sources */,
+				523AA3761F98D6D70088D557 /* LZNumberView.m in Sources */,
+				523AA3751F98D6C30088D557 /* LZGestureViewController.m in Sources */,
+				523AA3741F98D6470088D557 /* LZNumberTool.m in Sources */,
+				523AA3731F98D63F0088D557 /* TouchIdUnlock.m in Sources */,
+				523AA3721F98D6370088D557 /* LZPasswordViewController.m in Sources */,
+				523AA3711F98D4A30088D557 /* LZBaseViewController.m in Sources */,
+				523AA3701F98D49B0088D557 /* LZGestureTool.m in Sources */,
+				523AA36F1F98D4930088D557 /* LZGestureIntroduceViewController.m in Sources */,
+				523AA36E1F98D4880088D557 /* LZGestureSettingViewController.m in Sources */,
+				523AA36C1F98D1FC0088D557 /* LZGestureSetupViewController.m in Sources */,
+				52176B2E1F987507004D9716 /* WRCellView.m in Sources */,
+				52176B2D1F9874E4004D9716 /* KESettingController.m in Sources */,
+				52176B1E1F96E633004D9716 /* HighLightFormatter.m in Sources */,
+				52176B1F1F96E633004D9716 /* XAxisFormtter.m in Sources */,
+				52176B201F96E633004D9716 /* YAxisFormtter.m in Sources */,
+				52176B211F96E633004D9716 /* YRightAxisFormtter.m in Sources */,
+				521D7EB11F8B516B00B76293 /* BGFMDB.m in Sources */,
+				521D7EB21F8B516B00B76293 /* BGModelInfo.m in Sources */,
+				521D7EB31F8B516B00B76293 /* BGTool.m in Sources */,
+				52C124BB1F90483E004D1D70 /* KEBillDetailTableViewCell.swift in Sources */,
+				521D7EB41F8B516B00B76293 /* FMDatabase.m in Sources */,
+				521D7EB51F8B516B00B76293 /* FMDatabaseAdditions.m in Sources */,
+				521D7EBC1F8B66E100B76293 /* KEBillTypeModel.m in Sources */,
+				521D7EB61F8B516B00B76293 /* FMDatabasePool.m in Sources */,
+				521D7EB71F8B516B00B76293 /* FMDatabaseQueue.m in Sources */,
+				521D7EB81F8B516B00B76293 /* FMResultSet.m in Sources */,
+				521D7EB91F8B516B00B76293 /* NSObject+BGModel.m in Sources */,
+				52D941A11F73B8310006F140 /* KEHomeDetailViewModel.swift in Sources */,
+				52DBE3001F73590D0086221E /* KEConfigBaseNavigationController.swift in Sources */,
+				52C7E83F1F6FB320008E7E86 /* KECustomTabBarControllerConfig.swift in Sources */,
+				52C153AD1F959CFE009ED700 /* KEChartViewModel.swift in Sources */,
+				52C7E8421F6FB3F2008E7E86 /* KECustomTabBarController.swift in Sources */,
+				52805FD01F8B30BB008A6217 /* KEHomeDetailViewController.swift in Sources */,
+				521D7EAE1F8B4A3E00B76293 /* KEHomeBillModel.m in Sources */,
+				52C153B41F959F69009ED700 /* PNValue.swift in Sources */,
+				52C153AB1F959B8A009ED700 /* KEChartViewController.swift in Sources */,
+				5211D2861F78A746005CA7CA /* KETallyHeadView.swift in Sources */,
+				52176B261F971F85004D9716 /* KEChartTopTableViewCell.swift in Sources */,
+				52DBE2FE1F7108680086221E /* KEViewModelServicesImpl.swift in Sources */,
+				52DBE31A1F73A4700086221E /* KEViewModelService.swift in Sources */,
+				52C7E8461F70B6A7008E7E86 /* KECustomTabBarButton.swift in Sources */,
+				52176B311F9881FC004D9716 /* KEFindViewController.swift in Sources */,
+				52C7E8441F6FB800008E7E86 /* KECustomTabBar.swift in Sources */,
+				523AA37F1F98D8B80088D557 /* LZImportFiles.m in Sources */,
+				521D7EC41F8DA08F00B76293 /* GATextField.m in Sources */,
+				520D9AFC1F74AACD008B1F93 /* KEHomeDetailProtocolImpl.swift in Sources */,
 				52C7E8231F6F73D4008E7E86 /* AppDelegate.swift in Sources */,
+				520D9AF81F749DE6008B1F93 /* KEViewModelProtocolImpl.swift in Sources */,
+				52176B141F96E2B9004D9716 /* KEChartView.m in Sources */,
+				52C153BB1F95C460009ED700 /* KECustomTool.m in Sources */,
+				52DBE3181F7371DC0086221E /* KEViewModel.swift in Sources */,
+				521D7EC11F8BB11400B76293 /* KEBillTypeViewModel.swift in Sources */,
+				52C7E8391F6FAAB4008E7E86 /* Global.swift in Sources */,
+				52805FC11F7CA2E8008A6217 /* KEChargeUpViewController.swift in Sources */,
+				52C153A51F94A082009ED700 /* WKCustomeRefreshHeader.swift in Sources */,
+				52805FC81F8A1755008A6217 /* KECategoryCollectionViewCell.swift in Sources */,
+				52DBE3161F73701C0086221E /* KEBaseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		52C7E8261F6F73D4008E7E86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52C7E8271F6F73D4008E7E86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52C7E82B1F6F73D4008E7E86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -272,31 +1329,37 @@
 		};
 		52C7E8321F6F73D4008E7E86 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E11973E6F6477D77A0F19ED /* Pods-KETallyBOOK.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2M5J47RKKW;
 				INFOPLIST_FILE = KETallyBOOK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WK.KETallyBOOK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/macbookpro/Documents/app/KETallyBOOK/KE-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		52C7E8331F6F73D4008E7E86 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11FBD62B0E1106D7B4EB8795 /* Pods-KETallyBOOK.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2M5J47RKKW;
 				INFOPLIST_FILE = KETallyBOOK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = WK.KETallyBOOK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/macbookpro/Documents/app/KETallyBOOK/KE-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

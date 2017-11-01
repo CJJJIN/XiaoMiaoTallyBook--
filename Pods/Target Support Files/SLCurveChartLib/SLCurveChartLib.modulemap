@@ -1,0 +1,6 @@
+framework module SLCurveChartLib {
+  umbrella header "SLCurveChartLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
